@@ -31,12 +31,29 @@ class ViewController: UIViewController {
         
         showChar.text = givenText
         
+        
+        // Total number of Character
+        
         totalChar.text = String(givenText.count)
+        
+        // To count number of Alphabet C
         
        let char: Character = "c"
        let AlphaCount = givenText.filter { $0 == char }.count // case-sensitive
        
-       print("The total number of c:\(AlphaCount)")
+        
+        totalCharC.text = String(AlphaCount)
+        
+        
+        // Total number of Alphabet P
+        
+        
+        let charP: Character = "p"
+        let Alphacount2 = givenText.filter{$0 == charP}.count
+        
+        print("the total number of p:\(Alphacount2)")
+        
+        totalCharP.text = String(Alphacount2)
         
         super.viewDidLoad()
         
